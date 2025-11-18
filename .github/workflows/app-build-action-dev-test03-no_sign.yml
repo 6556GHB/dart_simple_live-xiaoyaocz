@@ -67,7 +67,10 @@ jobs:
       - name: Build APK
         run: |
           cd simple_live_app
-          flutter build apk --release --split-per-abi
+          flutter build apk --debug
+      #    flutter build apk --release --split-per-abi
+             
+        
           
       #跳过 APK 签名设置方案三：构建调试版本（推荐）
       #- name: Build APK
